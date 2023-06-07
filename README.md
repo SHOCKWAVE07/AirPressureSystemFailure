@@ -17,17 +17,20 @@ To achieve the project's objectives, the following steps will be undertaken:
 * Perform an initial analysis of the dataset to understand its structure, attribute types, and distribution.
 * Examine the relationship between attributes and identify any correlations with APS component failures.
 * Handle missing values appropriately, either by imputation or elimination, based on the dataset's characteristics.
+* Utilize the **IterativeImputer** from the sklearn.impute module to perform iterative imputation and estimate missing values.
 
 2.Feature Engineering and Selection:
 
 * Preprocess the dataset by transforming and normalizing the data as necessary.
 * Extract meaningful features from the available attributes to enhance the model's performance.
 * Select relevant features that have the most impact on the prediction task, using techniques like feature importance or dimensionality reduction methods.
+* Utilize the **RFE (Recursive Feature Elimination)** class from the sklearn.feature_selection module to recursively select important features for the prediction task.
 
 3.Model Development:
 
 * Split the preprocessed dataset into training and validation subsets.
 * Train various machine learning models, such as logistic regression, decision trees, random forests, or gradient boosting algorithms.
+* Train a **RandomForestClassifier** from the sklearn.ensemble module, which is an ensemble learning method that uses a collection of decision trees to make predictions.
 * Utilize appropriate evaluation metrics, such as accuracy, precision, recall, and F1-score, to assess model performance.
 * Optimize the models by tuning hyperparameters using techniques like grid search or random search.
 
